@@ -30,7 +30,11 @@ function geraSenha();{
     let senha = '';
     for (let i = 0 ; 1 < tamanhoSenha; i++){
         let numeroAleatorio = matchMedia.random() * letrasMaiusculas.length;
+    numeroAleatorio = Math.floor(numeroAleatorio);
+    senha = senha + letrasMaiusculas[numeroAleatorio]
     }
+campoSenha.value = senha;
+
 }
 
 
